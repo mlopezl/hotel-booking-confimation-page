@@ -1,11 +1,14 @@
 import './App.css'
+import Menu from './components/Menu'
+import Header from './components/Header'
 
 function App() {
 
   return (
-    <>
-     <h1 className="bg-red-500">Hola Mundo</h1>
-    </>
+    <div className='bg-Neutral-200 w-full min-h-screen flex flex-col gap-4'>
+      <Menu/>
+      <Header/>
+    </div>
   )
 }
 
