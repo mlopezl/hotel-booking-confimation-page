@@ -1,16 +1,28 @@
 import { useState } from "react";
+import MobileNav from "./MobileNav";
 
-function ToogleButton(){
-    const [icon, setIcon] = useState('icon-menu');
+function ToggleButton() {
+  const [isOpen, setIsOpen] = useState(false);
 
-    return(
-        <button 
-        className='w-7 h-8 border-Neutral-400 border-1 flex justify-center items-center rounded-sm'
-        onClick={() => setIcon(icon === 'icon-menu' ? 'icon-close' : 'icon-menu')}
-        >
-            <img src={`../../public/assets/images/${icon}.svg`} alt="Icon menu button" />
-        </button>
-    )
+  const toggleNav = () => {
+    setIsOpen(prev => !prev);x
+  };
+
+  return (
+    <>
+      <button
+        className="w-7 h-8 border-Neutral-400 border flex justify-center items-center rounded-sm"
+        onClick={toggleNav}
+      >
+        <img
+          src={`/assets/images/${isOpen ? "icon-close" : "icon-menu"}.svg`}
+          alt="Menu button"
+        />
+      </button>
+
+      <MobileNav isOpen={isOpen} />
+    </>
+  );
 }
 
-export default ToogleButton;
+export default ToggleButton;
