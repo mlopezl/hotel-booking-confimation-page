@@ -7,10 +7,12 @@ import ReservationCards from './components/ReservationCards'
 function App() {
 
   return (
-    <div className='bg-Neutral-200 w-full min-h-screen flex flex-col gap-4 relative pb-10'>
+    <div className='bg-Neutral-200 w-full min-h-screen flex flex-col gap-4 relative pb-10 md:grid md:grid-cols-10 md:grid-rows-auto'>
       <Nav/>
-      <Header/>
+       <Header/>
+       
       <Cards/>
+
       <ReservationCards/>
     </div>
   )

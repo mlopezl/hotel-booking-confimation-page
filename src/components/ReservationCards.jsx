@@ -3,7 +3,7 @@ import ReservationCard from "./ReservationCard";
 function ReservationCards(){
  
     return(
-        <section className="flex flex-col items-center justify-center gap-4 p-4">
+        <section className="flex flex-col items-center justify-center gap-4 p-4 md:col-span-10 md:row-span-2 md:flex-row md:flex-wrap lg:col-span-7 xl:col-span-8">
             <ReservationCard type={"Arrival"} number={"01"} title={"Check-in from 15:00"} subtitle={"Sat, 25 April"} color={"Terracotta-600"} icon={"icon-key"}>
                  <p className="text-xs font-semibold text-Neutral-600">Ring the brass bell by the blue door. If we're at the market, the key is in the terracota pot by the olive tree</p>
             </ReservationCard>

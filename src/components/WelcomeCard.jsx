@@ -1,6 +1,6 @@
 function WelcomeCard(){
     return(
-        <article className="bg-Terracotta-600 w-70 h-90 rounded-xl p-4 flex flex-col gap-2 rotate-2 shadow-xl shadow-terracotta-400">
+        <article className="shadow-[0_0_10px] shadow-Terracotta-500 bg-gradient-to-bl from-Terracotta-400 to-Terracotta-700 w-70 h-90 rounded-xl p-4 flex flex-col gap-2 rotate-2 z-1 lg:order-1 lg:w-80 lg:rotate-4 lg:mr-10">
             <p className="text-Neutral-400 text-xs brightness-75">- - - - - - - - - - - - - - - - - - - - - - - - - - - - - - -</p>
             <header className="flex justify-between">
                 <p className="text-Neutral-400 text-[9px] uppercase tracking-widest font-DM-Sans">Welcome card</p>

@@ -11,7 +11,7 @@ function ToggleButton() {
   return (
     <>
       <button
-        className="w-7 h-8 border-Neutral-400 border flex justify-center items-center rounded-sm"
+        className="w-7 h-8 border-Neutral-400 border flex justify-center items-center rounded-sm md:hidden"
         onClick={toggleNav}
       >
         <img
