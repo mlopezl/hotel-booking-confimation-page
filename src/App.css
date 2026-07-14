@@ -27,6 +27,10 @@
     --font-DM-Mono: "DM Mono", monospace;
 }
 
+#root{
+    min-height: 100vh;
+}
+
 .bg-Rose-500{
     background-color: var(--color-Rose-500);
 }
