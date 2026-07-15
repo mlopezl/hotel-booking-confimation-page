@@ -6,7 +6,7 @@ function MobileNav({ isOpen }) {
     <nav
       className={`
         ${isOpen ? "flex" : "hidden"}
-        absolute top-18 left-0 z-2
+        absolute top-18 left-0 z-4
         bg-Neutral-200 w-full min-h-180 p-2
         flex flex-col items-center justify-between
         md:flex md:w-80  md:pt-4

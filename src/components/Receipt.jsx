@@ -1,6 +1,8 @@
-function Receipt(){
+function Receipt({isHover}){
     return(
-        <article className="bg-Neutral-0 w-70 h-90 rounded-xl p-4 flex flex-col gap-3 -rotate-2 shadow-xl shadow-terracotta-400 lg:w-80 lg:-rotate-4">
+        <article className={`bg-Neutral-0 w-70 h-90 rounded-xl p-4 flex flex-col gap-3 shadow-xl shadow-terracotta-400 lg:w-80 z-2
+            transition-transform duration-300
+        ${isHover ? "rotate-12 -translate-x-20" : "-rotate-4" }`}>
             <header className="flex justify-between shadow-[0_2px_5px_-5px] shadow-Neutral-900 pb-2">
                 <div>
                     <h2 className="text-Neutral-700 text-[9px] uppercase tracking-widest font-DM-Sans flex flex-col gap-4">Receipt</h2>
