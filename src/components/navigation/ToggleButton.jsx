@@ -1,3 +1,6 @@
+import iconClose from '../../../public/assets/images/icon-close.svg';
+import iconMenu from '../../../public/assets/images/icon-menu.svg';
+
 function ToggleButton({isOpen, onToggle}) {
   
   return (
@@ -10,7 +13,7 @@ function ToggleButton({isOpen, onToggle}) {
         aria-controls="mobile-navigation"
       >
         <img
-          src={`/assets/images/${isOpen ? "icon-close" : "icon-menu"}.svg`}
+          src={`${isOpen ? iconClose : iconMenu}`}
           alt="Menu button"
         />
       </button>

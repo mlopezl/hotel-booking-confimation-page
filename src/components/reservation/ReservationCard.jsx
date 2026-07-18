@@ -6,9 +6,9 @@ function ReservationCard({
             <header  className="flex justify-between items-center">
                 <div className="flex gap-4 items-center">
                     <div className={`w-9 h-9 bg-${color} rounded-lg flex justify-center items-center`}>
-                        <img src={`/assets/images/${icon}.svg`} alt="" />
+                        <img src={icon} alt="" />
                     </div>
-                    <p className={`uppercase tracking-widest text-${color} text-sm font-semibold font-MD-Sans`}>{type}</p>
+                    <p className={`uppercase tracking-widest text-${color} text-sm font-semibold font-DM-Sans`}>{type}</p>
                 </div>
                 <p className={`uppercase tracking-widest text-${color} text-2xl font-semibold font-Fraunces`}>{number}</p>
             </header>

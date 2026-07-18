@@ -1,4 +1,4 @@
-import WheatherCard from "./WeatherCard";
+import WeatherCard from "./WeatherCard";
 import Address from "./Address";
 
 const weather = {
@@ -10,7 +10,7 @@ const weather = {
 function MobileNavFooter(){
     return(
         <footer className="flex flex-col items-center gap-4 mb-5">
-            <WheatherCard 
+            <WeatherCard 
             temperature={weather.temperature}
             condition={weather.condition}
             wind={weather.wind}

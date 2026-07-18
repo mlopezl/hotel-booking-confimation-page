@@ -1,3 +1,5 @@
+import iconBarCode from '../../../public/assets/images/icon-barcode.svg';
+
 function Receipt({isHover}){
     return(
         <article className={`bg-Neutral-0 w-70 h-90 rounded-xl p-4 flex flex-col gap-3 shadow-xl shadow-terracotta-400 lg:w-80 z-2
@@ -46,7 +48,7 @@ function Receipt({isHover}){
                 </div>
                 <div className="flex justify-between">
                     <p className="uppercase tracking-widest text-Neutral-900 text-[10px] font-DM-Sans flex flex-col">Paid · Wise · GBP</p>
-                    <img className="w-18" src="../../public/assets/images/icon-barcode.svg" alt="" />
+                    <img className="w-18" src={iconBarCode} alt="" />
                 </div>
             </footer>
         </article>

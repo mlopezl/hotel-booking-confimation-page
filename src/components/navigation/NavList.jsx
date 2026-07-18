@@ -1,25 +1,31 @@
 import NavItem from "./NavItem";
+import iconBed from '../../../public/assets/images/icon-bed.svg';
+import iconHouse from '../../../public/assets/images/icon-house.svg';
+import iconPin from '../../../public/assets/images/icon-pin.svg';
+import iconBreakfastOutline from '../../../public/assets/images/icon-breakfast-outline.svg';
+import iconMail from '../../../public/assets/images/icon-mail.svg';
+
 const items =[
     {
         title: "Your Stay",
-        icon: "/assets/images/icon-bed.svg",
+        icon: iconBed,
         notification: "1"
     },
     {
         title: "The House",
-        icon: "/assets/images/icon-house.svg",
+        icon: iconHouse,
     },
     {
         title: "Around Town",
-        icon: "/assets/images/icon-pin.svg",
+        icon: iconPin,
     },
     {
         title: "Breakfast",
-        icon: "/assets/images/icon-breakfast-outline.svg",
+        icon: iconBreakfastOutline,
     },
     {
         title: "Messages",
-        icon: "/assets/images/icon-mail.svg",
+        icon: iconMail,
     }
 ]
 

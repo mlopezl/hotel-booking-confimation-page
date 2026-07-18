@@ -1,6 +1,8 @@
 import WelcomeCard from "./WelcomeCard";
 import Receipt from "./Receipt";
 import { useState } from "react";
+import illustrationSun from '../../../public/assets/images/illustration-sun.svg';
+import iconSparkle from '../../../public/assets/images/icon-sparkle.svg';
 
 function Cards() {
   const [isHovered, setIsHovered] = useState(false);
@@ -18,7 +20,7 @@ function Cards() {
       <Receipt isHover={isHovered} />
       <img
         className="absolute bottom-10 z-1"
-        src="/assets/images/illustration-sun.svg"
+        src={illustrationSun}
         alt=""
       />
       <div
@@ -27,14 +29,14 @@ function Cards() {
         className="flex gap-4 absolute hidden bottom-0 lg:flex "
       >
         <img
-          src="/assets/images/icon-sparkle.svg"
+          src={iconSparkle}
           alt="Sparkle icon"
         />
-        <p className="uppercase text-[11px] text-Neutral-600 tracking-widest font-semibold font-MD-Mono">
+        <p className="uppercase text-[11px] text-Neutral-600 tracking-widest font-semibold font-DM-Mono">
           Hover to fan
         </p>
         <img
-          src="/assets/images/icon-sparkle.svg"
+          src={iconSparkle}
           alt="Sparkle icon"
         />
       </div>

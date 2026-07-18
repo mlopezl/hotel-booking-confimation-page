@@ -3,7 +3,7 @@ import MobileNavFooter from "./MobileNavFooter";
 
 function MobileNav({ isOpen }) {
   return (
-    <nav
+    <div
       className={`
         ${isOpen ? "flex" : "hidden"}
         absolute top-18 left-0 z-4
@@ -16,7 +16,7 @@ function MobileNav({ isOpen }) {
     >
       <NavList />
       <MobileNavFooter/>
-    </nav>
+    </div>
   );
 }
 
